@@ -13,7 +13,7 @@ def check_disk_full(disk, min_gb, min_precent):
 	du = shutil.disk_usage(disk)
 	# Calculate the percentage of free space
 	percent_free = 100 * du.free / 2**30
-	if percent_free < min_percent or gigabytes_free < min_gb
+	if percent_free < min_percent or gigabytes_free < min_gb:
 		return True
 	return False
 
